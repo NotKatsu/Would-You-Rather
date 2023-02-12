@@ -1,8 +1,7 @@
 import discord
 from discord.ext import commands
 
-intents = discord.Intents.all()
-bot = commands.Bot(status=discord.Status.online, intents=intents)
+bot = commands.Bot(status=discord.Status.online)
 
 
 @bot.event
