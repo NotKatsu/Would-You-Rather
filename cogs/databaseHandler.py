@@ -52,7 +52,6 @@ class databaseHandler(commands.Cog):
                 cursor.execute('INSERT INTO questions(optionOne, optionTwo) VALUES(?, ?)',
                                (question["option_one"], question["option_two"]))
                 connection.commit()
-                print("Inserted Question")
 
 
 def setup(bot):
