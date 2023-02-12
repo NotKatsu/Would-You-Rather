@@ -1,16 +1,9 @@
+import random
 import discord
 import sqlite3
 from discord.ext import commands
 from discord.commands import SlashCommandGroup
 
-connection = sqlite3.connect("WouldYouRather.db")
-cursor = connection.cursor()
-
-cursor.execute("""CREATE TABLE IF NOT EXISTS questions (
-                  question STRING,
-                  optionOne VARCHAR(255),
-                  optionTwo VARCHAR(255)
-                  )""")
 
 class commandHandler(commands.Cog):
     def __init__(self, bot: commands.Bot):

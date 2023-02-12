@@ -11,7 +11,7 @@ async def on_ready():
 
 
 if __name__ == "__main__":
-    extensions = ["cogs.commandHandler", "cogs.eventHandler"]
+    extensions = ["cogs.databaseHandler", "cogs.commandHandler"]
     for extension in extensions:
         bot.load_extension(extension)
 
