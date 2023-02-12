@@ -1,9 +1,6 @@
 import sqlite3
 
-import random
-import discord
 from discord.ext import commands
-from discord.commands import SlashCommandGroup
 
 connection = sqlite3.connect("WouldYouRather.db")
 cursor = connection.cursor()
